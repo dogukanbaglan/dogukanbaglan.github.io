@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="isletme.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="start">
+            <h1>BAĞLAN PETROL</h1>
+        </div>
+        <button class="button"  onclick="window.location.href='iletisim.html';"style="vertical-align:middle">
+
+            <span>İLETİŞİM</span></button>
+
+        <div class="items-wrapper">
+            <div class="item">
+                <p>Bahçelievler Şubemiz 1987'den beri sizlere en iyi hizmeti vermek için gece gündüz demeden
+                    çalışmaktadır.
+                </p>
+                <p>
+                    Aylık yıkama kampanyaları,anlaşmalı olduğumuz araç markalarında benzin ve motorin indirimleri
+                    sizlerle
+
+                </p>
+                <p>
+                    Aynı zamanda TİKTAK,GARENTA MOOV araçlarında yıkamamız ücretsizdir.
+                </p>
+                <p>
+                    <h4>ADRES BİLGİSİ</h4>
+                </p>
+                
+                <p>
+                    Bahçelievler Merkez, Eski Londra Asfaltı Caddesi, Adnan Kavveci Bulvari No:71, 34590 Bahçelievler
+                </p>
+
+            </div>
+            <div class="item">
+                <p>Florya Şubemiz 1994'den beri sizlere en iyi hizmeti vermek için gece gündüz demeden
+                    çalışmaktadır.
+                </p>
+                <p>
+                    Aylık yıkama kampanyaları,anlaşmalı olduğumuz araç markalarında benzin ve motorin indirimleri
+                    sizlerle
+
+                </p>
+                <p>
+                    Florya Şubemiz için özel 200 tl üzeri yakıt alışverişlerinizde marketimizde %15 indirim,sadece
+                    BAĞLAN PETROL'DE!!!
+                </p>
+                <p>
+                    <h4>ADRES BİLGİSİ</h4>
+                </p>
+                <p>
+                    Yeşilova, Yesİlova Yan Yolu No:32, 34640 Florya/İstanbul
+                </p>
+
+
+            </div>
+            <div class="item">
+                <p>Etiler Şubemiz 2003'den beri sizlere en iyi hizmeti vermek için gece gündüz demeden
+                    çalışmaktadır.
+                </p>
+                <p>
+                    Aylık yıkama kampanyaları,anlaşmalı olduğumuz araç markalarında benzin ve motorin indirimleri
+                    sizlerle
+
+                </p>
+                <p>
+                    F Segmentli araç sahiplerimiz her 3 depo fullemede bir deponuz hediye,sadece BAĞLAN PETROL'DE.
+                </p>
+                <p>
+                    <h4>ADRES BİLGİSİ</h4>
+                </p>
+                <p>
+                    Nisbetiye, Büyükdere Caddesi 132 Levent Mahallesi, 34330 Etiler
+                </p>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://www.otomobilden.com.tr/wp-content/uploads/2020/02/BP-istasyon.jpg"
+                        style="width:100%">
+                    <div class="text">BAHÇELİEVLER ŞUBESİ</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://www.ofispaneli.com/sites/default/files/inline-images/bp-musteri-hizmetleri-750x422.jpg"
+                        style="width:100%">
+                    <div class="text">FLORYA ŞUBESİ</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://www.isotlar.com.tr/upload/bp-petrol--isotlar.jpg" style="width:100%">
+                    <div class="text">ETİLER ŞUBESİ</div>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Bu alandan resimlerin geçiş süresini değiştirebilirsiniz.
+        }
+    </script>
+</body>
+
+</html>
